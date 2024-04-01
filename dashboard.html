@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workflow Approval System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+      <!-- WhatsApp Block -->
+      <div
+        class="flex items-center justify-center bg-white shadow-lg rounded-lg p-6"
+        id="whatsappBlock" >
+        <div class="text-center">
+          <i class="fab fa-whatsapp fa-3x text-green-500 mb-4"></i>
+          <h2 class="font-semibold text-xl mb-2">WhatsApp</h2>
+          <p class="text-gray-600">Connect with your team instantly</p>
+        </div>
+      </div>
+      <script>
+        document
+          .getElementById("whatsappBlock")
+          .addEventListener("click", function () {
+            window.location.href = "index.html"; // Redirect to index.html
+          });
+      </script>
+
+      <!-- Define Workflow Block -->
+      <div
+        class="flex items-center justify-center bg-white shadow-lg rounded-lg p-6"
+      >
+        <div class="text-center">
+          <i class="fas fa-project-diagram fa-3x text-blue-500 mb-4"></i>
+          <h2 class="font-semibold text-xl mb-2">Define Workflow</h2>
+          <p class="text-gray-600">Set up your project's workflow</p>
+        </div>
+      </div>
+
+      <!-- History Block -->
+      <div
+        class="flex items-center justify-center bg-white shadow-lg rounded-lg p-6"
+      >
+        <div class="text-center">
+          <i class="fas fa-history fa-3x text-yellow-500 mb-4"></i>
+          <h2 class="font-semibold text-xl mb-2">History</h2>
+          <p class="text-gray-600">Review your workflow history</p>
+        </div>
+      </div>
+
+      <!-- Tracking Block -->
+      <div
+        class="flex items-center justify-center bg-white shadow-lg rounded-lg p-6"
+      >
+        <div class="text-center">
+          <i class="fas fa-search fa-3x text-red-500 mb-4"></i>
+          <h2 class="font-semibold text-xl mb-2">Tracking</h2>
+          <p class="text-gray-600">Track the progress of workflows</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
